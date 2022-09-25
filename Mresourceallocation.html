@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+    h1 {
+      color: white;
+      font-weight: bold;
+      font-size: 4rem;
+      letter-spacing: 0.02em;
+
+    }
+
+    /* button{padding: 15px 32px;} */
+    #map {
+      top: 202px;
+      height: 350px;
+      right: 20%;
+      left: 55%;
+      width: 40%;
+      padding-right: 20px;
+
+    }
+
+    .box1 {
+      padding: 100px;
+      left: 0;
+      right: 0;
+      top: 42px;
+      bottom: 0;
+      color: chartreuse;
+      background-image: url(blue_bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: fixed;
+    }
+
+    .box11 {
+      /* background-color: blue; */
+      padding: 130px;
+      padding-right: 30px;
+      width: 30%;
+      right: 12%;
+      top: 42px;
+      bottom: 0;
+      color: chartreuse;
+      position: fixed;
+    }
+
+    .box2 {
+      /* background-color: blue; */
+      padding: 100px;
+      left: 30;
+      right: 240;
+      width: 25%;
+      top: 260px;
+      bottom: 100px;
+      background-color: blue;
+      border: 10px solid gray;
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      position: fixed;
+    }
+
+    .box21 {
+      /* background-color: blue; */
+      padding: 100px;
+      top: 220px;
+      bottom: 10;
+      width: 60%;
+      right: 26%;
+      position: fixed;
+    }
+
+    .box22 {
+      /* background-color: blue; */
+      padding: 100px;
+      width: 30%;
+      top: 220px;
+      bottom: 10;
+      right: 56%;
+      position: fixed;
+
+    }
+
+    button {
+      background-color: transparent;
+      /* border-color: rgb(107, 150, 107); */
+      align-items: center;
+      align-content: center;
+      height: 10px;
+      width: 80px;
+      border: 3px solid black;
+      border-bottom-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-top-left-radius: 5px;
+      padding: 20px;
+      font-weight: bold;
+      color: black;
+    }
+
+    #ha {
+      color: rgb(255, 255, 255);
+      font-family: teko;
+      font-size: 60px;
+      position: absolute;
+      bottom: 450px;
+      left: 280px;
+      text-shadow: 3px 3px 3px gray
+    }
+
+    #hb {
+      color: rgb(255, 255, 255);
+      font-family: teko;
+      font-size: 60px;
+      position: absolute;
+      bottom: 450px;
+      left: 200px;
+      text-shadow: 3px 3px 3px gray
+    }
+
+    #f1 {
+      color: rgb(255, 255, 255);
+      font-family: teko;
+      font-size: 50px;
+      position: absolute;
+      bottom: -50px;
+      left: 450px;
+      text-shadow: 3px 3px 3px gray
+    }
+
+    #p1 {
+      color: rgb(255, 255, 255);
+      font-family: teko;
+      font-size: 35px;
+      position: absolute;
+      bottom: -70px;
+      left: 475px;
+      text-shadow: 3px 3px 3px gray
+    }
+
+    #f2 {
+      color: rgb(255, 255, 255);
+      font-family: teko;
+      font-size: 50px;
+      position: absolute;
+      bottom: -50px;
+      left: 155px;
+      text-shadow: 3px 3px 3px gray
+    }
+
+    #p2 {
+      color: rgb(255, 255, 255);
+      font-family: teko;
+      font-size: 35px;
+      position: absolute;
+      bottom: -70px;
+      left: 180px;
+      text-shadow: 3px 3px 3px gray
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: rgb(49, 47, 47);
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      font-family: teko;
+      padding: 5px 20px;
+      text-decoration: none;
+      font-size: 28px;
+    }
+
+    .topnav a:hover {
+      background-color: rgb(137, 129, 129);
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="M1.html">HOME</a>
+    <a href="Mcontact.html">CONTACT</a>
+    <a href="Mabout.html">ABOUT</a>
+    <a class="active" href="#inventory">INVENTORY</a>
+  </div>
+
+  <div class="box1">
+
+    <h3 id="hb">RESOURCES IN INVENTORY</h3>
+    <div class="box11">
+      <h3 id="ha">CURRENT LOCATION</h3>
+
+    </div>
+    <div class="box2">
+      <center><b>
+          <div class="box21">
+            <p id = "f1">FOOD ITEMS</p>
+            <br>
+            <p id = "p1">400 Packets</p>
+          </div>
+          <div class="box22">
+            <p id = "f2">CLOTH ITEMS</p>
+            <br>
+            <p id = "p2">8000 Pieces</p>
+          </div>
+        </b>
+      </center>
+      <!-- FILL THE VALUE FROM DATA BASE HERE -->
+    </div>
+
+  </div>
+
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      // Map options
+      var options = {
+        zoom: 8,
+        center: { lat: 12.9354, lng: 77.5358 }
+
+      }
+
+      // New map
+      var map = new google.maps.Map(document.getElementById('map'), options);
+
+      // Listen for click on map
+      google.maps.event.addListener(map, 'click', function (event) {
+        // Add marker
+        addMarker({ coords: event.latLng });
+      });
+
+
+      // Add marker
+      var marker = new google.maps.Marker({
+        position: { lat: 42.4668, lng: -70.9495 },
+        map: map,
+        icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+      });
+
+      var infoWindow = new google.maps.InfoWindow({
+        content: '<h1>Lynn MA</h1>'
+      });
+
+      marker.addListener('click', function () {
+        infoWindow.open(map, marker);
+      });
+
+
+      // Array of markers
+      var markers = [
+        {
+          // coords:{lat:12.9354,lng:77.5358},
+          // iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content: '<h1>PESU</h1>'
+        },
+
+
+      ];
+
+      // Loop through markers
+      for (var i = 0; i < markers.length; i++) {
+        // Add marker
+        addMarker(markers[i]);
+      }
+
+      // Add Marker Function
+      function addMarker(props) {
+        var marker = new google.maps.Marker({
+          position: props.coords,
+          map: map,
+          //icon:props.iconImage
+        });
+
+        // Check for customicon
+        if (props.iconImage) {
+          // Set icon image
+          marker.setIcon(props.iconImage);
+        }
+
+        // Check content
+        if (props.content) {
+          var infoWindow = new google.maps.InfoWindow({
+            content: props.content
+          });
+
+          marker.addListener('click', function () {
+            infoWindow.open(map, marker);
+          });
+
+          infoWindow = new google.maps.InfoWindow();
+          const locationButton = document.createElement("button");
+          locationButton.textContent = "Pan to Current Location";
+          locationButton.classList.add("custom-map-control-button");
+          map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+          locationButton.addEventListener("click", () => {
+            // Try HTML5 geolocation.
+            if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(
+                (position) => {
+                  const pos = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude,
+                  };
+
+                  infoWindow.setPosition(pos);
+                  infoWindow.setContent("Location found.");
+                  infoWindow.open(map);
+                  map.setCenter(pos);
+                },
+                () => {
+                  handleLocationError(true, infoWindow, map.getCenter());
+                }
+              );
+            } else {
+              // Browser doesn't support Geolocation
+              handleLocationError(false, infoWindow, map.getCenter());
+            }
+          });
+        }
+      }
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEskStNYA-Oh30Vi3klVW8Unkn8pxiFbA&callback=initMap">
+    </script>
+</body>
+
+</html>

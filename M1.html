@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        .box1 {
+            padding: 100px;
+            left: 0;
+            right: 0;
+            top: 42px;
+            bottom: 0;
+            background-image: url(blue_bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: fixed;
+        }
+
+        .button-73 {
+            appearance: none;
+            background-color: #FFFFFF;
+            border-radius: 40em;
+            border-style: none;
+            box-shadow: #ADCFFF 0 -12px 6px inset;
+            box-sizing: border-box;
+            color: #000000;
+            cursor: pointer;
+            display: inline-block;
+            font-family: -apple-system, sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: -.24px;
+            margin: 0;
+            outline: none;
+            padding: 1rem 1.3rem;
+            quotes: auto;
+            text-align: center;
+            text-decoration: none;
+            transition: all .15s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-73:hover {
+            background-color: #FFC229;
+            box-shadow: #FF6314 0 -6px 8px inset;
+            transform: scale(1.125);
+        }
+
+        .button-73:active {
+            transform: scale(1.025);
+        }
+
+        @media (min-width: 768px) {
+            .button-73 {
+                font-size: 1.5rem;
+                padding: .75rem 2rem;
+            }
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+            font-family: teko;
+            font-size: 80px;
+            position: absolute;
+            bottom: 173px;
+            left: 680px;
+            text-shadow: 3px 3px 3px gray
+        }
+
+        .active {
+            font-family: -apple-system, sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: -.24px;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(49, 47, 47);
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            font-family: teko;
+            padding: 5px 20px;
+            text-decoration: none;
+            font-size: 28px;
+        }
+
+        .topnav a:hover {
+            background-color: rgb(137, 129, 129);
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url(blue_bg.jpg);
+    }
+
+    /* Full-width input fields */
+    input[type=email],
+    input[type=password] {
+      width: 550px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      flex-grow: auto;
+    }
+
+    #ha {
+      color: rgb(255, 255, 255);
+      font-family: teko;
+      font-size: 80px;
+      position: absolute;
+      bottom: 150px;
+      left: 100px;
+      text-shadow: 3px 3px 3px gray
+    }
+
+    /* Set a style for all buttons */
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 550px;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+
+    /* Center the image and position the close button */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+
+    .container {
+      padding: 16px;
+      width: 568px;
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+      padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #9aa6cf;
+      margin: 5% auto 5% auto;
+      /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 600px;
+      /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+
+    /* Add Zoom Animation */
+    .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+      from {
+        -webkit-transform: scale(0)
+      }
+
+      to {
+        -webkit-transform: scale(1)
+      }
+    }
+
+    @keyframes animatezoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.signin {
+        display: block;
+        float: none;
+      }
+
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a class="active" href="#home">HOME</a>
+        <a href="Mcontact.html">CONTACT</a>
+        <a href="Mabout.html">ABOUT</a>
+        <a href="Mresourceallocation.html">INVENTORY</a>
+    </div>
+
+    <div class="box1">
+
+        <img src="logo1.png" height="300px" width="300px">
+        <p>QUIKARE</p>
+
+        <br><br><br><br><br>
+
+        <button class="button-73" role="button" onclick="document.getElementById('id01').style.display='block'"
+            style="width:auto;">DONATE NOW</button> 
+
+    </div>
+    <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="Lakshya-your-location.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                  title="Close Modal">&times;</span>
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+              </div>
+
+              <div class="container">
+                <label for="email"><b>Email</b></label></br>
+                <input type="email" placeholder="example@example.com" name="email" required></br>
+
+                <label for="password"><b>Password</b></label></br>
+                <input type="password" placeholder="Enter Password" name="pass" required></br>
+
+                <input type="submit" class="btn btn-primary" name="Login" value="Submit"></br>
+              </div>
+
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                  class="cancelbtn">Cancel</button>
+              </div>
+            </form>
+          </div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>
